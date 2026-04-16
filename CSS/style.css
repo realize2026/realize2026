@@ -1,0 +1,739 @@
+    /* 全体共通 */
+*{
+    padding: 0;
+    margin: 0;
+    font-family:"游明朝", "Yu Mincho", "Hiragino Mincho ProN",
+               "MS P明朝", "MS Mincho", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ヘッダー */
+header{
+    color: #fff;
+    font-weight: 300;
+    background-color: #000;
+}
+
+header .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 20px 0;
+}
+
+.row ul{
+    display: flex;
+}
+
+header .logo{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+header .logo1{
+    width: 50px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin-left: 50px;
+}
+
+header nav ul li a{
+    transition: .2s;
+}
+
+header nav ul li a:hover{
+    transition: .2s;
+    opacity: 0.6;
+}
+
+.logo2{
+    width: 23px;
+}
+
+.logo3{
+    width: 27px;
+}
+
+.logo4{
+    width: 25px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.close-btn {
+  display: none;
+}
+
+/* メインヴィジュアル(mv) */
+.mv{
+    background-image: url("../images/mv.jpg");
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.mv .container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 550px;
+    position: relative;
+}
+
+.mv .title{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+}
+
+.mv h1{
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.mv p{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.mv .purple{
+    background-color: #88838b;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    mix-blend-mode: multiply;   
+}
+
+/* 理念 section1 */
+
+.section1{
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.small{
+    color: #0098a5;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-top: 50px;
+}
+
+.label{
+    text-align: center;
+    font-size: 50px;
+    color: #000;
+    padding-bottom: 30px;
+}
+
+.s1img{
+    /*background-image: url("../images/vision③.jpg");*/
+    width: 60%;
+    margin: 0 auto;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.s1img .container{
+    max-width: 1280px;
+    height: 570px;
+    position: relative;
+}
+
+.s1img h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    color: #1A2A4F;
+}
+
+.s1img p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #000;
+}
+
+/* スクール紹介 　セクション2*/
+
+.section2{
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.s2container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-bottom: 70px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col{
+    width: 48%;
+}
+
+.pic{
+    border-radius: 10px;
+}
+
+.row .text{
+    font-size: 20px;
+    border-top: 1px solid #ccc;     /* 上に線 */
+    border-bottom: 1px solid #ccc;  /* 下に線 */
+    padding: 20px 0;
+}
+
+.right span{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+iframe{
+    border-radius: 5px;
+}
+
+.slider{
+    display: flex;
+}
+
+.left {
+    position: sticky;
+    top: 40px; /* スクロール時の固定開始位置 */
+    height: fit-content; 
+    flex: 2.5;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.right {
+    flex: 7.5;
+}
+
+.box1{
+    width: 100%;
+    border-top: 1px solid #ccc; 
+    padding-top: 30px;    
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;  
+}
+
+.headline{
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-weight: 600;
+}
+
+.writing{
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.right img{
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.personal1
+{
+    height: 1100px;
+}
+
+.box2{
+    width: 100%;
+}
+
+.text span{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* コーチ紹介　セクション3 */
+.section3{
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.s3container{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.content {
+  display: flex;
+  align-items: center; 
+  gap: 40px;           
+}
+
+.image-area{ /* 3:7 の比率 */
+    flex: 3;
+    padding-left: 50px;
+}
+  
+.text-area{
+    flex: 7;
+}
+  
+.image-area img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.name{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.text{
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.qualification{
+    font-size: 20px;
+}
+
+/* お問い合わせ　セクション4 */
+
+.section4{
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding-bottom: 70px;
+}
+
+.s4img{
+    background-image: url("../images/contact.jpg");
+    margin: 0 auto;
+    width: 90%;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+    border-radius: 5px;
+}
+
+.s4img .container{
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 400px;
+    position: relative;
+}
+
+.s4img .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: #fff;
+    width: 75%;
+    height: auto;
+}
+
+.s4img h5{   
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.s4img p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.s4img .purple{
+    background-color: rgb(132, 139, 139);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    mix-blend-mode: multiply; 
+    border-radius: 5px;  
+}
+
+.btn{
+    font-size: 18px;
+    color:  #fff;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    display: inline-block;
+    width: 270px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 50px; 
+    font-weight: 600;
+}
+
+.btn:hover{  
+    color: rgb(173, 235, 235);  
+    border: solid 1px rgb(173, 235, 235);
+    transition: .2s;
+}
+
+/* フッター */
+footer{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    background-color: #000;
+    font-weight: 300;
+}
+
+.fcontainer{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding:  30px 0 ;
+}
+
+.footer_logo{
+    width: 40px;
+}
+
+footer .footer_title{
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+footer nav ul li{
+    font-size: 15px;
+    margin: 0 30px ;
+}
+
+footer ul li a{
+    transition: .2s;
+}
+
+footer ul li a:hover{
+    transition: .2s;
+    opacity: 0.6;
+}
+
+.copyright{
+    font-size: 11px;
+}
+
+/* お問い合わせページ(contact.html) */
+.page_mv{
+    background-image: url("../images/mv.jpg");
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.page_mv .container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+    height: 300px;
+    position: relative;
+}
+
+.page_mv h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.page_mv p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.page_mv .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    color: #fff;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+}
+
+.page_mv .purple{
+    background-color: #88838b;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    mix-blend-mode: multiply;   
+}
+
+.contact_section{
+    color: #000;
+    padding: 80px;
+    background-color: #f5f5f5;
+}
+
+.contact_section .container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+/* =====================
+   スマホ専用（完全版）
+===================== */
+@media (max-width: 768px) {
+
+  /* ===== ヘッダー ===== */
+  header .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    margin: 8px 12px 0 0;
+  }
+
+  header .logo {
+    font-size: 16px;
+  }
+
+  /* ===== メインビジュアル ===== */
+  .mv .container {
+    height: 300px;
+  }
+
+  .mv h1 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .mv p {
+    font-size: 14px;
+  }
+
+  /* ===== 共通見出し ===== */
+  .label {
+    font-size: 30px;
+  }
+
+  .small {
+    font-size: 14px;
+  }
+
+  /* ===== section1（由来） ===== */
+  .s1img {
+    width: 90%;
+  }
+
+  .s1img h2 {
+    font-size: 28px;
+  }
+
+  .s1img p {
+    font-size: 16px;
+  }
+
+  /* ===== section2（スクール紹介） ===== */
+  .slider {
+    flex-direction: column;
+  }
+
+  .left {
+    display: none;
+  }
+
+  .headline {
+    font-size: 25px;
+  }
+
+  .writing {
+    font-size: 15px;
+  }
+
+  .writing span{
+    font-size: 20px;
+  }
+
+  /* ===== section3（コーチ紹介） ===== */
+  .content {
+    flex-direction: column;
+  }
+
+  .image-area img {
+    width: 45%;
+    margin-left: 50px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 15px;
+  }
+
+  /* ===== section4（お問い合わせ） ===== */
+  .s4img .container {
+    height: 300px;
+  }
+
+  .s4img h5 {
+    font-size: 22px;
+  }
+
+  .s4img p {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  /* ===== フッター ===== */
+  footer ul {
+    flex-direction: column;
+  }
+
+  footer nav ul li {
+    margin: 10px 0;
+  }
+
+  /* ===== お問い合わせページ ===== */
+  .page_mv .container {
+    height: 200px;
+  }
+
+  .page_mv h1 {
+    font-size: 26px;
+  }
+
+  .page_mv p {
+    font-size: 14px;
+  }
+
+  .contact_section {
+    padding: 40px 15px;
+  }
+
+  .contact_section .container {
+    width: 100%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: 1600px;
+    border-radius: 10px;
+  }
+
+  /* Menuボタン */
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 1001;
+    color: #fff;
+  }
+
+  header nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  header nav.active {
+    right: 0;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* ×ボタン */
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    display: none; /* 初期非表示 */
+    z-index: 1002;
+  }
+
+  header nav.active .close-btn {
+    display: block; /* Menu開いたら表示 */
+  }
+}

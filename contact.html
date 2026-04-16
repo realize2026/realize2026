@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - REALIZE FOOTBALL ACADEMY</title>
+
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- フォント -->
+    <link href="fonts.googleapis.com" rel="stylesheet">
+
+    <!-- ホームページアイコン(Favicon) -->
+    <link rel="shortcut icon" href="./images/RFA_logo(Favicon).ico">
+
+</head>
+<body>
+    <header id= "top">
+        <div class="row">
+            <ul>
+                <li>
+                <a href="index.html#top" class="logo"><img src="./images/RFA_logo.png" class="logo1" alt="ロゴ"></a>
+                </li>
+                <li>
+                <a href="index.html#top" class="logo">REALIZE <br>FOOTBALL ACADEMY</a>
+                </li>
+            </ul>
+            <div class="menu-toggle">Menu</div>
+            <nav>
+                    <ul>
+                        <li><a href="./index.html#s1">REALIZEとは</a></li>
+                        <li><a href="./index.html#s2">スクール紹介</a></li>
+                        <li><a href="./index.html#s3">コーチ紹介</a></li>
+                        <li><a href="./index.html#s4">お問い合わせ</a></li>
+                        <li><a href="https://www.instagram.com/hkr.football?igsh=cjl6d2R1NWRxdW1l&utm_source=qr"><img src="images/Instagram_logo.png" class="logo2" alt="ロゴ"></a></li>
+                        <li><a href="https://www.tiktok.com/@hkr.football?_t=ZS-90Chdomx2er&_r=1"><img src="images/tiktok-logo.png" class="logo3" alt="ロゴ"></a></li>
+                        <li><a href="https://lin.ee/nfTbAii"><img src="images/Line_logo.png" class="logo4" alt="LINEロゴ"></a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="mv">
+            <div class="container">
+                <div class="title">
+                     <h1>
+                        お問い合わせ
+                    </h1>
+                    <p>
+                        Contact
+                    </p>
+                </div>
+            </div>
+            <div class="purple"></div>
+        </section>
+
+        <section class="contact_section">
+            <div class="container">
+               <iframe src="https://forms.gle/K7fCNKjpMEvR78iG9" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="fcontainer">
+            <ul>
+                <li>
+                    <a href="#top"><img src="./images/RFA_logo.png" class="footer_logo" alt="ロゴ"></a>
+                </li>
+                <li>
+                    <a href="#top" class="footer_title">REALIZE FOOTBALL ACADEMY</a>
+                </li>
+            </ul>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html#s1">REALIZEとは</a>
+                    </li>
+
+                    <li>
+                        <a href="./index.html#s2">スクール紹介</a>
+                    </li>
+
+                    <li>
+                        <a href="./index.html#s3">コーチ紹介</a>
+                    </li>
+
+                    <li>
+                        <a href="./index.html#s4">お問い合わせ</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/hkr.football?igsh=cjl6d2R1NWRxdW1l&utm_source=qr"><img src="images/Instagram_logo.png" class="logo2" alt="ロゴ"></a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@hkr.football?_t=ZS-90Chdomx2er&_r=1"><img src="images/tiktok-logo.png" class="logo3" alt="ロゴ"></a>
+                    </li>
+
+                    <li>
+                        <a href="https://lin.ee/nfTbAii"><img src="images/Line_logo.png" class="logo4" alt="LINEロゴ"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+            ©  2026 REALIZE FOOTBALL ACADEMY. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('header nav');
+
+        // ×ボタン作成
+        const closeBtn = document.createElement('div');
+        closeBtn.className = 'close-btn';
+        closeBtn.textContent = '×';
+        nav.appendChild(closeBtn);
+
+        // Menu開く
+        menuToggle.addEventListener('click', () => {
+        nav.classList.add('active');
+        menuToggle.style.display = 'none'; // Menuボタン非表示
+        });
+
+        // ×ボタンで閉じる
+        closeBtn.addEventListener('click', () => {
+        nav.classList.remove('active');
+        menuToggle.style.display = 'block'; // Menuボタン再表示
+        });
+    </script>
+</body>
+</html>
