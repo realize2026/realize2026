@@ -278,6 +278,14 @@ iframe{
     font-weight: 600;
 }
 
+.pc {
+    display: inline;
+}
+
+.sp {
+    display: none;
+}
+
 /* コーチ紹介　セクション3 */
 .section3{
     background-color: #f0efef;
@@ -520,7 +528,7 @@ footer ul li a:hover{
 }
 
 /* =====================
-   スマホ専用（完全版）
+   スマホ専用
 ===================== */
 @media (max-width: 768px) {
 
@@ -598,6 +606,34 @@ footer ul li a:hover{
 
   .writing span{
     font-size: 20px;
+  }
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: inline;
+  }
+
+  .yasato_school{
+    width: 100% !important;
+    height: auto !important;
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .personal1{
+    width: 100% !important;
+    height: auto !important;
+    max-width: none;
+    margin-left: 0;
+  }
+
+  .personal2{
+    width: 100% !important;
+    height: auto !important;
+    max-width: none;
+    margin-left: 0;
   }
 
   /* ===== section3（コーチ紹介） ===== */
